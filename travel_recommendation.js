@@ -6,7 +6,7 @@ const inputSearch = document.getElementById('conditionInput');
 btnSearch.addEventListener('click', () => dataSource(inputSearch.value));
 
 const divRecommendations = document.getElementById('recommendations');
-//divRecommendations.style.display = 'none';
+divRecommendations.style.display = 'none';
 
 const dataSource = (searchData) => {
 
