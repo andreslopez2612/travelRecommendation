@@ -1,0 +1,385 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-bg: #f8f8f8;
+  --text-color: #fbfbfb;
+  --border-color: #ccc;
+  --body-bg: #f4f4f4;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./img/img-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: var(--body-bg);
+}
+
+/* Header Styles */
+
+header {
+  width: 100%;
+}
+
+.title-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.title-home svg {
+  text-align: center;
+  margin: 20px 0;
+  width: 20px;
+  height: 20px;
+  color: var(--text-color);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+nav,
+.search-input {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav {
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.302);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+/* Search Input Styles */
+
+.search-input {
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  padding: 0 0 0 10px;
+  height: 30px;
+}
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.search-input input {
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+}
+.search-input input::placeholder {
+  color: var(--text-color);
+}
+.search-input button {
+  border: none;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border-radius: 50px;
+  height: 30px;
+  width: 100px;
+  color: white;
+}
+
+/* Main Content Styles */
+
+main.home-main {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  min-height: 80vh;
+  margin: auto;
+  width: 80%;
+}
+
+main.home-main section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 40vw;
+}
+
+main.home-main h1 {
+  color: var(--text-color);
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+main.home-main p {
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+/* about section styles */
+main.about-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin: auto;
+  width: 80%;
+}
+main.about-main section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main.about-main h1 {
+  color: var(--text-color);
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+main.about-main p {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main section.team-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* fixed icon styles */
+
+.fixed-icons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--text-color);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.fixed-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.fixed-icons svg {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* about team member card styles */
+.team-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+.team-section .team-members {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+.team-section h2 {
+  color: var(--text-color);
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+}
+
+.team-member svg {
+  width: 50px;
+  height: 50px;
+  color: var(--text-color);
+}
+
+.team-member h3 {
+  color: var(--text-color);
+  font-size: 18px;
+  margin: 10px 0 5px 0;
+}
+
+/* contact section styles */
+
+main.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin: auto;
+  width: 80%;
+}
+main.contact-main section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main.contact-main form {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+}
+
+main.contact-main h1 {
+  color: var(--text-color);
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+main.contact-main label {
+  color: var(--text-color);
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+main.contact-main input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+main.contact-main textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+main.contact-main button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#recommendations {
+  position: relative;
+  background-color: rgba(255, 254, 254, 0.837);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/**
+recommendation-title
+recommendation-content
+*/
+
+.recommendation-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  max-width: 400px;
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+}
+
+.recommendation-img img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.recommendation-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.recommendation-content {
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  padding: 0 10px 10px 10px;
+}
+
+.recommendation-visit button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#recommendationListCountries,
+#recommendationListTemples,
+#recommendationListBeaches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+}
+
+#btnCloseSearch {
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
